@@ -4,7 +4,9 @@
 #include "Framework/Input.h"
 #include <string.h>
 #include <iostream>
-
+#include "Ball.h"
+#include "Moving.h"
+#include "AngryBird.h"
 
 class Level{
 public:
@@ -25,4 +27,12 @@ private:
 	Input* input;
 
 	// More level variables
+	Ball ball;
+	sf::Texture ballSprite;
+
+	Moving moving;
+	sf::Texture movingTexture;
+
+	AngryBird shoot;
+	sf::Texture shootSprite;
 };
